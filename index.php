@@ -5,10 +5,11 @@
 // Se volete potete pure ampliare l'esercizio considerando anche ad esempio i collaboratori esterni oppure rendendo più specifico ancora il concetto di dipendente.
 // Decidete voi le varie proprietà e la loro visibilità, l'importante è che cerchiate di scrivere codice pulito, estensibile e manutenibile
 
-require 'Impiegato.php';
+
+require_once 'Impiegato.php';
 
 
-$nuovo_impiegato = new Impiegato('Marco', 'Rossi', 'Maschio','5555','3333','4444');
+$nuovo_impiegato = new Impiegato('Marco', 'Rossi', 'Maschio','5555','3333');
 
 
 echo "<pre>";

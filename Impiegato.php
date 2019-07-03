@@ -1,7 +1,7 @@
 
 <?php
 
-require 'Persona.php';
+require_once 'Persona.php';
 
 
 class Impiegato extends Persona
@@ -9,17 +9,18 @@ class Impiegato extends Persona
 
   public $mansione;
   public $livello;
-  protected $num_matricola;
+  public $num_matricola;
   protected $iban;
 
-  function __construct($mansione, $livello, $num_matricola){
-
-    $this->mansione =$num_matricola;
-    $this->livello = $livello;
-    $this->num_matricola= $num_matricola;
+  function __construct($n, $c, $s, $mansione, $livello){
     parent::__construct($n, $c, $s);
-
+    $this->mansione =$mansione;
+    $this->livello = $livello;
   }
+
+  // function getMatricola(){
+  //   return $this->$num_matricola;
+  // }
 
 }
 
